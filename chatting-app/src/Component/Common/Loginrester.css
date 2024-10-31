@@ -1,0 +1,43 @@
+.account {
+    @apply w-full h-screen bg-[#B0D8DA] flex;
+}
+
+.account_text h1 {
+    @apply text-[12px] lg:text-[30px] md:text-[26px] w-[120px] lg:w-[555px] md:w-[380px] pt-9 lg:pt-[150px] md:pt-[100px] font-semibold;
+}
+
+.account_text {
+    @apply relative w-[100px] lg:w-[400px] md:w-[300px];
+}
+
+.account_img {
+    @apply absolute top-[28%] lg:w-[818px];
+    animation: move linear infinite 1s;
+}
+
+@keyframes move {
+    0% {
+        top: 24%;
+    }
+    50% {
+        top: 26%;
+    }
+    100% {
+        top: 24%;
+    }
+}
+
+.account_img img {
+    @apply w-[600px];
+}
+
+.account_form {
+    @apply w-full h-screen bg-[#fff] rounded-bl-[50px] rounded-tl-[50px]
+    lg:pt-[109px] lg:pb-[119px] md:pt-[59px] md:pb-[69px] pt-[39px] pb-[49px];
+}
+.account_form h2{
+    @apply lg:text-[48px] md:text-[36] text-[26px] text-center font-poppins font-bold 
+}
+.other_aacount button{
+    @apply  flex gap-0
+}

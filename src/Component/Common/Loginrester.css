@@ -1,0 +1,107 @@
+.account {
+    @apply w-full bg-[#B0D8DA] flex;
+}
+
+.account_text h1 {
+    @apply text-[12px] lg:text-[30px] md:text-[26px] w-[140px] lg:w-[400px] md:w-[380px] pt-[99px] lg:pt-[100px] md:pt-[700px] font-semibold;
+}
+
+.account_text {
+    @apply relative w-[136px] lg:w-[400px] md:w-[300px];
+}
+
+.account_img {
+    @apply absolute top-[28%] lg:w-[518px];
+    animation: move linear infinite 1s;
+}
+
+@keyframes move {
+    0% {
+        top: 24%;
+    }
+    50% {
+        top: 26%;
+    }
+    100% {
+        top: 24%;
+    }
+}
+
+.account_img img {
+    @apply w-[600px];
+}
+
+.account_form {
+    @apply w-full  md:mt-3 mt-[100px] bg-[#fff] rounded-bl-[50px] rounded-tl-[50px]
+    lg:pt-[89px] lg:pb-[49px] mb-7 md:pt-[59px] md:pb-[69px] pt-[39px] pb-[49px];
+}
+.account_form h2{
+    @apply lg:text-[48px] md:text-[36] text-[26px] text-center font-poppins font-bold 
+}
+.other_aacount button{
+    @apply w-[100px] h-[50px] lg:w-[300px] lg:h-[67px] md:w-[200px] md:h-[55px] border-2 border-[#A6A6A6] rounded-[20px] mt-4 lg:mt-[50px] 
+    md:mt-[30px] mb-4 lg:mb-[50px] 
+    md:mb-[30px] flex gap-0
+}
+.other_aacount button{
+   @apply border-2 border-[#A6A6A6] border-solid lg:w-[270px] md:w-[250px] w-[200px]
+}
+.other_aacount button h3{
+    @apply text-[8px] md:text-[16px] lg:text-[21px] font-poppins
+}
+.other_aacount button img{
+    @apply lg:w-[36px] lg:h-[35px] md:w-[36px] md:h-[35px] w-[26px] h-[25px]  overflow-hidden
+}
+.account .sub{
+    @apply text-[21px] lg:text-[30px] md:text-[25px] font-poppins font-bold text-[#fff]
+}
+/* ===========input pluging========== */
+/* From Uiverse.io by satyamchaudharydev */ 
+.form {
+    --width-of-input: 225px;
+    --border-height: 1px;
+    --border-before-color: #A6A6A6;
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+   }
+   /* styling of Input */
+   .input {
+    color: #4e1616;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+   /* styling of animated border */
+   .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+   }
+   /* Hover on Input */
+   input:hover {
+    background: var(--input-hovered-color);
+   }
+   
+   input:focus {
+    outline: none;
+   }
+   /* here is code of animated border */
+   input:focus ~ .input-border {
+    width: 100%;
+   }
+   /* === if you want to do animated border on typing === */
+   /* remove input:focus code and uncomment below code */
+   /* input:valid ~ .input-border{
+     width: 100%;
+   } */
